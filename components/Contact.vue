@@ -85,7 +85,7 @@ export default {
 }
 #BaiduMap {
   width: 100%;
-  height: 30%;
+  height: 300px;
 }
 .Contact-Body-text {
   width: 25%;

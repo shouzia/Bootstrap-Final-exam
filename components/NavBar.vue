@@ -8,17 +8,13 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-navbar-nav>
-            <b-nav-item href="#">主页</b-nav-item>
-          </b-navbar-nav>
-          <b-navbar-nav>
-            <b-nav-item href="#">成员</b-nav-item>
-          </b-navbar-nav>
-          <b-navbar-nav>
-            <b-nav-item href="#">巡演</b-nav-item>
-          </b-navbar-nav>
-          <b-navbar-nav>
-            <b-nav-item href="#">联系我们</b-nav-item>
+          <b-navbar-nav v-for="item in NavData" :key="item.href">
+            <b-nav-item
+              v-scroll-to="{
+                el: item.href,
+              }"
+              >{{ item.title }}</b-nav-item
+            >
           </b-navbar-nav>
 
           <b-nav-item-dropdown text="更多" right>
@@ -31,8 +27,36 @@
   </div>
 </template>
 
+
+//  v-scroll-to="{
+//                 el: item.Navhref,
+//                 offset: -280,
+//               }"
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      NavData: [
+        {
+          title: "主页",
+          href: "#Home",
+        },
+        {
+          title: "成员",
+          href: "#Member",
+        },
+        {
+          title: "巡演",
+          href: "#Touring",
+        },
+        {
+          title: "联系我们",
+          href: "#Contact",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>

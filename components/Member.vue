@@ -1,5 +1,5 @@
 <template>
-  <div class="member mx-auto">
+  <div id="Member" class="member mx-auto">
     <div class="text-center px-2">
       <h2 class="member-title">我们的成员</h2>
       <br />

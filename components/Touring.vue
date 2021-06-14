@@ -1,5 +1,5 @@
 <template>
-  <div class="Touring text-center">
+  <div id="Touring" class="Touring text-center">
     <div class="mx-auto Touring-min-box">
       <h2 class="member-title">巡演日期</h2>
       <br />

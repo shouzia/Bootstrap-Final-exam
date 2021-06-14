@@ -12,6 +12,9 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'http://api.map.baidu.com/api?v2.0&ak=1GiOHLTXgbsBXj28sHeWCeyzTAi8GaxA' }
     ]
   },
 
@@ -34,6 +37,10 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    'vue-scrollto/nuxt',
+
+    // Or if you have custom options...
+    ['vue-scrollto/nuxt', { duration: 300 }],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

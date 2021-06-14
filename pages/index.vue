@@ -5,11 +5,15 @@
     <Member />
     <Touring />
     <Contact />
+    <Footer-Bar />
   </div>
 </template>
 
 <script>
-export default {};
+// import footer from "../components/footer.vue";
+export default {
+  components: {},
+};
 </script>
 <style scoped>
 .BigBox {
